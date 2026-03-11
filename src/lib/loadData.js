@@ -1,9 +1,11 @@
+const base = import.meta.env.BASE_URL;
+
 export async function loadAllData() {
   const urls = [
-    "/data/billionaires_clean.json",
-    "/data/stats.json",
-    "/data/histograms.json",
-    "/data/population_shares.json",
+    `${base}data/billionaires_clean.json`,
+    `${base}data/stats.json`,
+    `${base}data/histograms.json`,
+    `${base}data/population_shares.json`,
   ];
 
   const responses = await Promise.all(urls.map((u) => fetch(u)));
