@@ -21,8 +21,8 @@ export default function App() {
 
   return (
     <HashRouter>
-      <div className="background-gif" />
-      <div className="background-overlay" />
+      {/* <div className="background-gif" />
+      <div className="background-overlay" /> */}
     
       <div style={{ fontFamily: "system-ui", padding: 20, maxWidth: 1100, margin: "0 auto" }}>
         <h1 style={{ marginBottom: 6 }}>Meritocracy & Wealth</h1>
@@ -31,7 +31,7 @@ export default function App() {
           Billionaire wealth is heavy-tailed; averages stabilize (CLT), while extremes scale with population size.
         </p>
 
-        <nav style={{ display: "flex", gap: 50, marginBottom: 18, fontSize: 25 }}>
+        <nav style={{ display: "flex", gap: 20, marginBottom: 18 }}>
           <Link to="/">Distribution</Link>
           <Link to="/clt">CLT</Link>
           <Link to="/demographics">Who becomes a billionaire?</Link>

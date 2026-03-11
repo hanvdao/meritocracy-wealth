@@ -27,7 +27,7 @@ export function cltSampleMeans(values, sampleSize, trials) {
   return means;
 }
 
-// Box-Muller normal generator
+//Box-Muller normal generator
 function randn() {
   let u = 0, v = 0;
   while (u === 0) u = Math.random();
@@ -35,7 +35,7 @@ function randn() {
   return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
 }
 
-// Lognormal draw using mu/sigma in log-space
+//Lognormal draw using mu/sigma in log-space
 export function drawLogNormal(mu, sigma) {
   return Math.exp(mu + sigma * randn());
 }

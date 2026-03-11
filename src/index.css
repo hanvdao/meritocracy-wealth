@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #fafafa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -45,7 +45,7 @@ a:hover {
 body {
   font-family: system-ui, -apple-system, sans-serif;
   color: #0a0a0b;
-  /* background: #071014; */
+  /* background: #f3eddb; */
 }
 
 .background-gif {
@@ -53,13 +53,13 @@ body {
   inset: 0;
   z-index: -2;
 
-  background-image: url("/meritocracy-wealth/background.gif");
+  background-image: url("/background.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   filter: invert(100%) blur(4px);
-  opacity: 0.15;
+  opacity: 0.3;
 }
 .background-overlay {
   position: fixed;
