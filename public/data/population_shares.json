@@ -1,0 +1,18 @@
+{
+  "gender": {
+    "M": 0.5,
+    "F": 0.5
+  },
+  "country": {
+    "United States": 0.042,
+    "China": 0.178,
+    "India": 0.176,
+    "Germany": 0.010,
+    "France": 0.008,
+    "United Kingdom": 0.008,
+    "Russia": 0.018,
+    "Hong Kong": 0.001,
+    "Canada": 0.005,
+    "Brazil": 0.027
+  }
+}
