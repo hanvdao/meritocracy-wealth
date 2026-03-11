@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import { loadAllData } from "./lib/loadData";
 
 import Distribution from "./pages/Distribution";
@@ -20,7 +20,7 @@ export default function App() {
   if (!data) return <div style={{ padding: 24 }}>Loading data…</div>;
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="background-gif" />
       <div className="background-overlay" />
     
@@ -46,6 +46,6 @@ export default function App() {
           <Route path="/likelihood" element={<Likelihood data={data} />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
